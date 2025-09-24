@@ -4,7 +4,7 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
-    <nav className="px-8 md:px-16 lg:px-24 bg-gray-200 dark:bg-gray-900 text-black dark:text-white shadow transition-colors duration-300">
+    <nav className="px-8 md:px-16 lg:px-24 bg-black dark:bg-gray-900 text-white  text-white shadow transition-colors duration-300">
       <div className="container py-2 flex justify-center md:justify-between items-center">
         <div className="text-2xl font-bold hidden md:inline">Mihinadi</div>
 
