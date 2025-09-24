@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -40,13 +41,14 @@ function App() {
 
   return (
     <div className="bg-gray-100 dark:bg-gray-900 min-h-screen transition-colors duration-300">
-      {/* Pass both darkMode state and toggle function to Navbar */}
+      
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero />
       <About />
       <Projects />
       <Contact />
       <Footer />
+      
     </div>
   );
 }
