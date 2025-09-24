@@ -40,16 +40,22 @@ function App() {
   };
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 min-h-screen transition-colors duration-300">
+    
+    
+
+      <div className="">
+
+        <div className="bg-primary dark:bg-primary-dark dark:text-white min-h-screen transition-colors duration-300 ">
       
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
+          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <Hero />
+          <About />
+          <Projects/>
+          <Contact />
+          <Footer />
       
-    </div>
+        </div>
+      </div>
   );
 }
 
