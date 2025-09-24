@@ -5,7 +5,7 @@ import React  from 'react'
 const Hero =() =>{
     return (
         
-        <div className='bg-black text-white text-center py-16'>
+        <div className=' text-white text-center py-16 bg-black dark:bg-gray-900 text-white '>
             <img src='\src\assets\profile.jpg'
             className='mx-auto mb-8 w-48 h-48 rounded-full object-cover transform transition-transform duration-300 hover:scale-105' />
             <h1 className='text-4xl font-bold'>
