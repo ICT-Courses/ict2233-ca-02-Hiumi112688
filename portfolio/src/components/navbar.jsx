@@ -1,27 +1,29 @@
 import React from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
+
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
-    <nav className="px-8 md:px-16 lg:px-24 bg-gray-200 dark:bg-gray-900 text-black dark:text-white shadow">
+    <nav className="px-8 md:px-16 lg:px-24 bg-gray-200 dark:bg-gray-900 text-black dark:text-white shadow transition-colors duration-300">
       <div className="container py-2 flex justify-center md:justify-between items-center">
         <div className="text-2xl font-bold hidden md:inline">Mihinadi</div>
 
         <div className="space-x-6 flex items-center">
-          <a href="#home" className="hover:text-gray-400">Home</a>
-          <a href="#about" className="hover:text-gray-400">About Me</a>
-          <a href="#projects" className="hover:text-gray-400">Projects</a>
-          <a href="#contact" className="hover:text-gray-400">Contact</a>
+          <a href="#home" className="hover:text-gray-400 transition-colors">Home</a>
+          <a href="#about" className="hover:text-gray-400 transition-colors">About Me</a>
+          <a href="#projects" className="hover:text-gray-400 transition-colors">Projects</a>
+          <a href="#contact" className="hover:text-gray-400 transition-colors">Contact</a>
 
-          {/* Toggle button */}
+         
           <button
             onClick={toggleDarkMode}
-            className="p-2 rounded-full bg-gray-300 dark:bg-gray-700 transition-colors"
+            className="p-2 rounded-full bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-600 transition-all duration-300"
+            aria-label="Toggle dark mode"
           >
             {darkMode ? (
-              <FaSun className="text-yellow-500" />
+              <FaSun className="text-yellow-500 w-5 h-5" />
             ) : (
-              <FaMoon className="text-yellow-400" />
+              <FaMoon className="text-yellow-500 w-5 h-5" />
             )}
           </button>
         </div>
